@@ -1,0 +1,3840 @@
+{
+  "generatedAt": "2026-10-04T13:09:11.840Z",
+  "templates": [
+    {
+      "id": "accordion",
+      "label": "Accordion",
+      "layer": "editorial",
+      "readiness": "implemented",
+      "policy": "editorial-block-candidate",
+      "variants": [],
+      "aliases": [],
+      "regions": {
+        "mode": "none",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "Native details/summary disclosure with an accessible editorial row."
+    },
+    {
+      "id": "pullquote",
+      "label": "Pullquote",
+      "layer": "editorial",
+      "readiness": "implemented",
+      "policy": "editorial-block-candidate",
+      "variants": [
+        "thesis",
+        "editorial-note"
+      ],
+      "aliases": [
+        "editorial-note"
+      ],
+      "regions": {
+        "mode": "none",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "A short, evidence-backed rhetorical pause. Thesis and editorial-note treatments are variants of the same bounded block."
+    },
+    {
+      "id": "margin-note",
+      "label": "Margin note",
+      "layer": "editorial",
+      "readiness": "implemented",
+      "policy": "editorial-block-candidate",
+      "variants": [],
+      "aliases": [],
+      "regions": {
+        "mode": "none",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "Short attributed aside with a rust marker."
+    },
+    {
+      "id": "editorial-table",
+      "label": "Editorial table",
+      "layer": "editorial",
+      "readiness": "implemented",
+      "policy": "editorial-block-candidate",
+      "variants": [],
+      "aliases": [],
+      "regions": {
+        "mode": "none",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "Semantic, div-based tabular rows; needs a strict table schema before Studio output."
+    },
+    {
+      "id": "code-card",
+      "label": "Code card",
+      "layer": "editorial",
+      "readiness": "implemented",
+      "policy": "editorial-block-candidate",
+      "variants": [],
+      "aliases": [],
+      "regions": {
+        "mode": "none",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "Structured code/schema panel; must remain plain text and never accept arbitrary markup."
+    },
+    {
+      "id": "chip-row",
+      "label": "Chip / code-token row",
+      "layer": "editorial",
+      "readiness": "implemented",
+      "policy": "editorial-block-candidate",
+      "variants": [],
+      "aliases": [],
+      "regions": {
+        "mode": "none",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "Named fields, evidence attributes, and gate lists; requires a bounded item schema."
+    },
+    {
+      "id": "annotated-artifact",
+      "label": "Annotated artifact",
+      "layer": "editorial",
+      "readiness": "extract-before-enable",
+      "policy": "editorial-block-candidate",
+      "variants": [
+        "record-anatomy",
+        "sealed-run",
+        "package-specimen"
+      ],
+      "aliases": [],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "A primary record, package, or run shown with bounded callouts. The artifact and every annotation must come from supplied evidence."
+    },
+    {
+      "id": "comparison-matrix",
+      "label": "Comparison matrix",
+      "layer": "editorial",
+      "readiness": "implemented",
+      "policy": "editorial-block-candidate",
+      "variants": [
+        "three-subject"
+      ],
+      "aliases": [
+        "subject-comparison-table"
+      ],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "A numbered table comparing named rows across a fixed set of subjects, each column marked by a categorical tone. Cells take a small span AST (plain, strong, code, status), never markup; a missing cell renders UNKNOWN. Narrow screens stack each row and every cell names its subject."
+    },
+    {
+      "id": "equivalence-matrix",
+      "label": "Equivalence matrix",
+      "layer": "editorial",
+      "readiness": "implemented",
+      "policy": "editorial-block-candidate",
+      "variants": [
+        "linked-entities"
+      ],
+      "aliases": [
+        "service-crosswalk"
+      ],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "Named equivalents for one capability across a fixed set of subjects. Each cell is a structured entity (name, source link, lifecycle status, note), never markup; a nameless entity renders as no offering and a missing cell renders UNKNOWN. Lifecycle statuses come from a bounded set, and flags that mean plan a migration draw in rust. A row can carry an always-visible editor’s note. The host supplies the filter text and emphasised subject, so one control can drive every matrix in an essay."
+    },
+    {
+      "id": "subject-profiles",
+      "label": "Subject profiles",
+      "layer": "editorial",
+      "readiness": "implemented",
+      "policy": "editorial-block-candidate",
+      "variants": [
+        "headline-figure",
+        "instrument-summary"
+      ],
+      "aliases": [
+        "subject-fact-columns"
+      ],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "Side-by-side fact columns, one per subject, each marked by a categorical tone: an optional headline figure, a fact sheet, points, labelled notes, and a closing verdict. The figure is a supplied string displayed as written; it is never scaled, charted, or ranked across columns. One column on narrow screens."
+    },
+    {
+      "id": "system-flow",
+      "label": "System flow",
+      "layer": "figure",
+      "readiness": "implemented",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "estate-context",
+        "model-pipeline",
+        "generation-pipeline"
+      ],
+      "aliases": [],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "A reusable, typed system schematic with configurable components, path roles, freeform layout, and restrained motion. A host can follow the active step to show authored detail beside the figure. It remains a Studio candidate until its configuration has a runtime schema and renderer contract."
+    },
+    {
+      "id": "sequence-flow",
+      "label": "Sequence flow",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "provenance-chain",
+        "handoff",
+        "operation-sequence"
+      ],
+      "aliases": [
+        "evidence-chain"
+      ],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "An ordered handoff among typed stages. Provenance is one evidence-bound variant, not the primitive name."
+    },
+    {
+      "id": "feedback-loop",
+      "label": "Feedback loop",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [],
+      "aliases": [],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "Nested and learning loops prove the pattern, but the current figures are bespoke."
+    },
+    {
+      "id": "layered-stack",
+      "label": "Layered stack",
+      "layer": "figure",
+      "readiness": "implemented",
+      "policy": "visual-director-candidate",
+      "variants": [],
+      "aliases": [],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "The primitive's isometric-callouts variant (the four-disciplines infographic) is an enabled, typed visual plan. This entry stays a candidate so the generic manual stack template remains on the canvas; Plane stack and AI X-Ray remain fixtures for the vertical and crosscutting-spine treatments."
+    },
+    {
+      "id": "architecture-stack",
+      "label": "Architecture stack",
+      "layer": "figure",
+      "readiness": "implemented",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "vertical-tiers"
+      ],
+      "aliases": [
+        "reference-architecture"
+      ],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "A conceptual reference architecture read top to bottom: supplied tiers (primary, plain, or external) with chips, cells, and side-by-side splits, joined by labelled connectors. Several stacks in one row compare architectures. It is conceptual, not a deployment diagram, and distinct from the isometric layered-stack infographic."
+    },
+    {
+      "id": "pipeline-flow",
+      "label": "Pipeline / flow",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [],
+      "aliases": [],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "Cycle, compiler, IR stages, and coordination chain are related but need separate bounded variants."
+    },
+    {
+      "id": "branching-tree",
+      "label": "Branching tree",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [],
+      "aliases": [],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "The coordination router proves the need; a safe tree data renderer is still absent."
+    },
+    {
+      "id": "node-edge-network",
+      "label": "Node-edge network",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [],
+      "aliases": [],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "System topology and peer mesh must preserve roles, permissions, and sparse topology."
+    },
+    {
+      "id": "crosswalk",
+      "label": "Crosswalk",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [],
+      "aliases": [],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "Three-column requirements-to-control-to-test mapping; absent from the original sample list but a real FieldNotes pattern."
+    },
+    {
+      "id": "funnel",
+      "label": "Funnel",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "decision",
+        "convergence",
+        "applicability"
+      ],
+      "aliases": [
+        "applicability-funnel"
+      ],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "Tapered convergence or decision stages; labels and outcomes must remain explicit."
+    },
+    {
+      "id": "bus",
+      "label": "Bus",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "shared-capability-spine"
+      ],
+      "aliases": [
+        "harness-bus"
+      ],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "A shared spine connecting one capability to several consumers or processes."
+    },
+    {
+      "id": "translation-bridge",
+      "label": "Translation bridge",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "canonical-object"
+      ],
+      "aliases": [
+        "canonical-object-bridge"
+      ],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "A bridge that maps concepts between two systems through an explicit intermediate representation."
+    },
+    {
+      "id": "continuum",
+      "label": "Continuum",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "bounded-spectrum"
+      ],
+      "aliases": [
+        "spectrum-bar"
+      ],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "An ordered range with named endpoints, positions, and explicit indeterminate states."
+    },
+    {
+      "id": "state-track",
+      "label": "State track",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "lifecycle",
+        "evidence-gates"
+      ],
+      "aliases": [
+        "certification-track"
+      ],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "Ordered states and gates for a lifecycle; distinct from a historical timeline."
+    },
+    {
+      "id": "orbital-system",
+      "label": "Orbital system",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "hub-and-spoke",
+        "mutation-cases"
+      ],
+      "aliases": [
+        "radial-mutation-orbit"
+      ],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "A central reference state surrounded by related actors, cases, or outcomes."
+    },
+    {
+      "id": "comparison",
+      "label": "Comparison",
+      "layer": "figure",
+      "readiness": "implemented",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "before-after",
+        "old-new",
+        "tension",
+        "balance"
+      ],
+      "aliases": [],
+      "regions": {
+        "mode": "required",
+        "min": 2,
+        "max": 2,
+        "defaults": [
+          "Before",
+          "After"
+        ]
+      },
+      "itemFields": [
+        "meta",
+        "icon"
+      ],
+      "notes": "Matched structures shown side by side so differences, tradeoffs, or migration can be inspected."
+    },
+    {
+      "id": "semantic-matrix",
+      "label": "Semantic matrix",
+      "layer": "figure",
+      "readiness": "implemented",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "two-by-two",
+        "crosswalk-grid"
+      ],
+      "aliases": [
+        "quadrant"
+      ],
+      "regions": {
+        "mode": "required",
+        "min": 1,
+        "max": 8,
+        "defaults": [],
+        "variantGroups": {
+          "two-by-two": {
+            "min": 4,
+            "max": 4,
+            "defaults": [
+              "High · high",
+              "High · low",
+              "Low · high",
+              "Low · low"
+            ]
+          },
+          "crosswalk-grid": {
+            "min": 2,
+            "max": 6,
+            "defaults": [
+              "Supported",
+              "Contested",
+              "Open"
+            ]
+          }
+        }
+      },
+      "itemFields": [
+        "meta",
+        "icon"
+      ],
+      "notes": "Items positioned against two named semantic dimensions; quantitative frontiers remain data visualizations."
+    },
+    {
+      "id": "assembly",
+      "label": "Assembly",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "blocks",
+        "factory",
+        "package"
+      ],
+      "aliases": [],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "Parts combine into a bounded whole; used for assertion blocks, factories, and packaged deliverables."
+    },
+    {
+      "id": "semantic-equation",
+      "label": "Semantic equation",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "value-equation"
+      ],
+      "aliases": [],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "Named concepts related by operators. It explains a model and does not imply numerical calculation."
+    },
+    {
+      "id": "curve",
+      "label": "Curve",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "maturity",
+        "frontier"
+      ],
+      "aliases": [],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "A qualitative trajectory over an explicitly named progression; scaled quantitative curves belong in the chart catalog."
+    },
+    {
+      "id": "staircase",
+      "label": "Staircase",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "maturity-levels",
+        "price-staircase"
+      ],
+      "aliases": [],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "Discrete levels shown as steps. Maturity levels ascend; the price-staircase variant descends on a log scale, holds each level until the next release, and draws in once on first view with labels that settle without colliding."
+    },
+    {
+      "id": "nested-containment",
+      "label": "Nested containment",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "nested-loops",
+        "rings"
+      ],
+      "aliases": [],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "Concentric or nested regions that communicate scope, ownership, or reinforcing layers."
+    },
+    {
+      "id": "swimlane",
+      "label": "Swimlane",
+      "layer": "figure",
+      "readiness": "implemented",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "agent-trace",
+        "handoff-trace"
+      ],
+      "aliases": [],
+      "regions": {
+        "mode": "required",
+        "min": 2,
+        "max": 6,
+        "defaults": [
+          "Person",
+          "Agent",
+          "System"
+        ]
+      },
+      "itemFields": [
+        "meta",
+        "icon"
+      ],
+      "notes": "Events organized by actor or system lane so responsibility and handoffs remain visible."
+    },
+    {
+      "id": "boundary",
+      "label": "Boundary",
+      "layer": "figure",
+      "readiness": "extract-before-enable",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "membrane",
+        "human-gate"
+      ],
+      "aliases": [],
+      "regions": {
+        "mode": "optional",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [],
+      "notes": "A named perimeter that separates authority, responsibility, or allowed action."
+    },
+    {
+      "id": "region-grid",
+      "label": "Region grid",
+      "layer": "figure",
+      "readiness": "implemented",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "pillars",
+        "brief",
+        "swot"
+      ],
+      "aliases": [],
+      "regions": {
+        "mode": "required",
+        "min": 2,
+        "max": 6,
+        "defaults": [
+          "First region",
+          "Second region",
+          "Third region",
+          "Fourth region"
+        ],
+        "variantGroups": {
+          "swot": {
+            "min": 4,
+            "max": 4,
+            "defaults": [
+              "Strengths",
+              "Weaknesses",
+              "Opportunities",
+              "Threats"
+            ]
+          }
+        }
+      },
+      "itemFields": [
+        "meta",
+        "icon"
+      ],
+      "notes": "Named regions (pillars, a brief, a SWOT) each holding the points that belong to it. Adapted from Interactive Response grid widgets."
+    },
+    {
+      "id": "horizons",
+      "label": "Horizons",
+      "layer": "figure",
+      "readiness": "implemented",
+      "policy": "visual-director-candidate",
+      "variants": [
+        "now-next-later",
+        "phases"
+      ],
+      "aliases": [
+        "roadmap"
+      ],
+      "regions": {
+        "mode": "required",
+        "min": 2,
+        "max": 5,
+        "defaults": [
+          "Now",
+          "Next",
+          "Later"
+        ]
+      },
+      "itemFields": [
+        "meta",
+        "icon"
+      ],
+      "notes": "Ordered columns for horizons or phases. Order is sequence, not magnitude; dated events belong in the timeline."
+    },
+    {
+      "id": "card-grid",
+      "label": "Card grid",
+      "layer": "editorial",
+      "readiness": "implemented",
+      "policy": "editorial-block-candidate",
+      "variants": [
+        "cards",
+        "profiles"
+      ],
+      "aliases": [
+        "icon-cards",
+        "profile-cards"
+      ],
+      "regions": {
+        "mode": "none",
+        "min": 1,
+        "max": 8,
+        "defaults": []
+      },
+      "itemFields": [
+        "meta",
+        "icon"
+      ],
+      "notes": "Repeated cards with a bounded glyph or monogram, a label, a short annotation, and detail: findings, uncertainties, or people."
+    }
+  ],
+  "primitives": [
+    {
+      "id": "layered-stack",
+      "version": "1.0.0",
+      "status": "enabled",
+      "layer": "structural",
+      "semanticRoles": [
+        "hierarchy",
+        "abstraction",
+        "infrastructure",
+        "compounding disciplines"
+      ],
+      "avoidWhen": [
+        "chronology",
+        "the layers do not build on one another"
+      ],
+      "variants": [
+        "isometric-callouts"
+      ],
+      "minItems": 2,
+      "maxItems": 6,
+      "recommendedMaxPerEssay": 1,
+      "compatibleNeighbors": [
+        "timeline",
+        "pullquote"
+      ],
+      "avoidAfter": [
+        "layered-stack"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "node-edge-network",
+      "version": "1.0.0",
+      "status": "planned",
+      "layer": "structural",
+      "semanticRoles": [
+        "relationships",
+        "dependencies",
+        "systems"
+      ],
+      "avoidWhen": [
+        "fewer than four meaningful entities",
+        "sequence"
+      ],
+      "variants": [
+        "sparse",
+        "clustered"
+      ],
+      "minItems": 4,
+      "maxItems": 12,
+      "recommendedMaxPerEssay": 1,
+      "compatibleNeighbors": [
+        "pullquote",
+        "comparison"
+      ],
+      "avoidAfter": [
+        "node-edge-network"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pipeline-flow",
+      "version": "1.0.0",
+      "status": "planned",
+      "layer": "structural",
+      "semanticRoles": [
+        "process",
+        "transformation",
+        "stages"
+      ],
+      "avoidWhen": [
+        "no causal transformation"
+      ],
+      "variants": [
+        "linear",
+        "orchestrator-workers"
+      ],
+      "minItems": 2,
+      "maxItems": 8,
+      "recommendedMaxPerEssay": 2,
+      "compatibleNeighbors": [
+        "pullquote",
+        "timeline"
+      ],
+      "avoidAfter": [
+        "pipeline-flow"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "branching-tree",
+      "version": "1.0.0",
+      "status": "planned",
+      "layer": "structural",
+      "semanticRoles": [
+        "taxonomy",
+        "divergence",
+        "decomposition"
+      ],
+      "avoidWhen": [
+        "cross-branch relationships dominate"
+      ],
+      "variants": [
+        "taxonomy",
+        "conditional-router"
+      ],
+      "minItems": 3,
+      "maxItems": 12,
+      "recommendedMaxPerEssay": 1,
+      "compatibleNeighbors": [
+        "comparison",
+        "pullquote"
+      ],
+      "avoidAfter": [
+        "branching-tree"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "feedback-loop",
+      "version": "1.0.0",
+      "status": "planned",
+      "layer": "structural",
+      "semanticRoles": [
+        "iteration",
+        "adaptation",
+        "reinforcement"
+      ],
+      "avoidWhen": [
+        "one-time process"
+      ],
+      "variants": [
+        "cycle",
+        "evaluator-optimizer"
+      ],
+      "minItems": 3,
+      "maxItems": 8,
+      "recommendedMaxPerEssay": 1,
+      "compatibleNeighbors": [
+        "timeline",
+        "pullquote"
+      ],
+      "avoidAfter": [
+        "feedback-loop"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "timeline",
+      "version": "1.0.0",
+      "status": "enabled",
+      "layer": "structural",
+      "semanticRoles": [
+        "chronology",
+        "historical progression"
+      ],
+      "avoidWhen": [
+        "chronology is incidental"
+      ],
+      "variants": [
+        "editorial-horizontal"
+      ],
+      "minItems": 3,
+      "maxItems": 12,
+      "recommendedMaxPerEssay": 2,
+      "compatibleNeighbors": [
+        "pullquote",
+        "comparison"
+      ],
+      "avoidAfter": [
+        "timeline"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "comparison",
+      "version": "1.0.0",
+      "status": "planned",
+      "layer": "comparative",
+      "semanticRoles": [
+        "contrast",
+        "tradeoff",
+        "replacement"
+      ],
+      "avoidWhen": [
+        "no matched comparison"
+      ],
+      "variants": [
+        "before-after",
+        "old-grammar-new-grammar",
+        "tension",
+        "balance"
+      ],
+      "minItems": 2,
+      "maxItems": 4,
+      "recommendedMaxPerEssay": 2,
+      "compatibleNeighbors": [
+        "timeline",
+        "pullquote"
+      ],
+      "avoidAfter": [
+        "comparison"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "continuum",
+      "version": "1.0.0",
+      "status": "planned",
+      "layer": "comparative",
+      "semanticRoles": [
+        "spectrum",
+        "transition",
+        "degree"
+      ],
+      "avoidWhen": [
+        "categories are discrete"
+      ],
+      "variants": [
+        "axis"
+      ],
+      "minItems": 3,
+      "maxItems": 8,
+      "recommendedMaxPerEssay": 1,
+      "compatibleNeighbors": [
+        "pullquote",
+        "semantic-matrix"
+      ],
+      "avoidAfter": [
+        "continuum"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "semantic-matrix",
+      "version": "1.0.0",
+      "status": "planned",
+      "layer": "comparative",
+      "semanticRoles": [
+        "two dimensions",
+        "clusters",
+        "tensions"
+      ],
+      "avoidWhen": [
+        "only one meaningful dimension"
+      ],
+      "variants": [
+        "two-by-two"
+      ],
+      "minItems": 3,
+      "maxItems": 12,
+      "recommendedMaxPerEssay": 1,
+      "compatibleNeighbors": [
+        "pullquote",
+        "timeline"
+      ],
+      "avoidAfter": [
+        "semantic-matrix"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "annotated-artifact",
+      "version": "1.0.0",
+      "status": "planned",
+      "layer": "editorial",
+      "semanticRoles": [
+        "close reading",
+        "annotation"
+      ],
+      "avoidWhen": [
+        "no primary artifact"
+      ],
+      "variants": [
+        "editorial-notes"
+      ],
+      "minItems": 1,
+      "maxItems": 6,
+      "recommendedMaxPerEssay": 1,
+      "compatibleNeighbors": [
+        "pullquote",
+        "timeline"
+      ],
+      "avoidAfter": [
+        "annotated-artifact"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "pullquote",
+      "version": "1.0.0",
+      "status": "planned",
+      "layer": "editorial",
+      "semanticRoles": [
+        "rhetorical pause",
+        "thesis"
+      ],
+      "avoidWhen": [
+        "the statement is decorative"
+      ],
+      "variants": [
+        "thesis-object"
+      ],
+      "minItems": 1,
+      "maxItems": 1,
+      "recommendedMaxPerEssay": 2,
+      "compatibleNeighbors": [
+        "timeline",
+        "comparison",
+        "layered-stack"
+      ],
+      "avoidAfter": [
+        "pullquote"
+      ],
+      "notes": ""
+    },
+    {
+      "id": "semantic-infographic",
+      "version": "1.0.0",
+      "status": "enabled",
+      "layer": "structural",
+      "semanticRoles": [
+        "addressable system",
+        "data-bound illustration",
+        "narrative sequence"
+      ],
+      "avoidWhen": [
+        "a conventional chart would communicate the data more directly",
+        "the asset has no meaningful sub-parts to address"
+      ],
+      "variants": [
+        "editorial"
+      ],
+      "minItems": 1,
+      "maxItems": 150,
+      "recommendedMaxPerEssay": 1,
+      "compatibleNeighbors": [
+        "pullquote",
+        "comparison"
+      ],
+      "avoidAfter": [
+        "semantic-infographic"
+      ],
+      "notes": ""
+    }
+  ],
+  "charts": [
+    {
+      "id": "bar-column",
+      "name": "Bar / column",
+      "family": "comparison",
+      "question": "Length on a common baseline: the most accurately decoded quantitative encoding.",
+      "marks": [
+        "bar",
+        "rule",
+        "text"
+      ],
+      "required": [
+        "x",
+        "length"
+      ],
+      "optional": [
+        "hue",
+        "orientation",
+        "luminance",
+        "order"
+      ],
+      "record": "{ category: nominal, value: quantitative }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "category",
+                "type": "nominal",
+                "label": "category"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "category",
+            "label": "Category",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 100
+        }
+      }
+    },
+    {
+      "id": "grouped-bar",
+      "name": "Grouped bar",
+      "family": "comparison",
+      "question": "An inner band scale nests a second category inside each primary category.",
+      "marks": [
+        "bar",
+        "rule",
+        "text"
+      ],
+      "required": [
+        "x",
+        "length",
+        "hue"
+      ],
+      "optional": [
+        "order",
+        "opacity"
+      ],
+      "record": "{ category: nominal, series: nominal, value: quantitative }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "category",
+                "type": "nominal",
+                "label": "category"
+              },
+              {
+                "name": "series",
+                "type": "nominal",
+                "label": "series"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "category",
+            "label": "Category",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "series",
+            "label": "Series",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 2000,
+          "maxSeries": 50
+        }
+      }
+    },
+    {
+      "id": "dot-plot",
+      "name": "Dot plot",
+      "family": "comparison",
+      "question": "Every group in a row shares one position scale, so gaps read as precisely as bars. A range rule carries the spread and one reference series anchors the comparison.",
+      "marks": [
+        "point",
+        "rule",
+        "text"
+      ],
+      "required": [
+        "x",
+        "y",
+        "hue"
+      ],
+      "optional": [
+        "shape",
+        "order",
+        "length"
+      ],
+      "record": "{ category: nominal, series: nominal, value: quantitative | null }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "category",
+                "type": "nominal",
+                "label": "category"
+              },
+              {
+                "name": "series",
+                "type": "nominal",
+                "label": "series"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "category",
+            "label": "Category",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "series",
+            "label": "Series",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 2400,
+          "maxSeries": 7
+        }
+      }
+    },
+    {
+      "id": "stacked-column",
+      "name": "Stacked column",
+      "family": "composition",
+      "question": "Composition by stacked lengths. The total shares a baseline; the segments do not.",
+      "marks": [
+        "bar",
+        "rule",
+        "text"
+      ],
+      "required": [
+        "x",
+        "length",
+        "hue",
+        "order"
+      ],
+      "optional": [
+        "luminance",
+        "texture"
+      ],
+      "record": "{ period: ordinal, segment: nominal, value: quantitative }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "period",
+                "type": "ordinal",
+                "label": "period"
+              },
+              {
+                "name": "segment",
+                "type": "nominal",
+                "label": "segment"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "period",
+            "label": "Period",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "segment",
+            "label": "Segment",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 2000,
+          "maxSeries": 50
+        }
+      }
+    },
+    {
+      "id": "histogram",
+      "name": "Histogram",
+      "family": "distribution",
+      "question": "Continuous values binned into adjacent tiles; bin width is a stated design decision.",
+      "marks": [
+        "bar",
+        "rule",
+        "text"
+      ],
+      "required": [
+        "x",
+        "length"
+      ],
+      "optional": [
+        "hue",
+        "luminance",
+        "saturation"
+      ],
+      "record": "{ value: quantitative } (binned by renderer)",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 10000
+        }
+      }
+    },
+    {
+      "id": "line",
+      "name": "Line",
+      "family": "trend",
+      "question": "A path connecting positions. It encodes direction and slope, not magnitude.",
+      "marks": [
+        "line",
+        "point",
+        "rule"
+      ],
+      "required": [
+        "x",
+        "y"
+      ],
+      "optional": [
+        "hue",
+        "shape",
+        "opacity"
+      ],
+      "record": "{ period: ordinal, value: quantitative }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "period",
+                "type": "temporal",
+                "label": "period"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "period",
+            "label": "Period",
+            "types": [
+              "temporal",
+              "ordinal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 2000
+        }
+      }
+    },
+    {
+      "id": "multi-line",
+      "name": "Multi-series line",
+      "family": "trend",
+      "question": "One line per category, distinguished by hue and redundantly by shape.",
+      "marks": [
+        "line",
+        "point",
+        "rule"
+      ],
+      "required": [
+        "x",
+        "y",
+        "hue"
+      ],
+      "optional": [
+        "shape",
+        "opacity",
+        "texture"
+      ],
+      "record": "{ period: ordinal, series: nominal, value: quantitative }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "period",
+                "type": "temporal",
+                "label": "period"
+              },
+              {
+                "name": "series",
+                "type": "nominal",
+                "label": "series"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "period",
+            "label": "Period",
+            "types": [
+              "temporal",
+              "ordinal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "series",
+            "label": "Series",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 2000,
+          "maxSeries": 50
+        }
+      }
+    },
+    {
+      "id": "slope",
+      "name": "Slope chart",
+      "family": "trend",
+      "question": "Two periods connected. Direction is the entire message; everything else is removed.",
+      "marks": [
+        "line",
+        "point",
+        "text"
+      ],
+      "required": [
+        "x",
+        "y",
+        "hue"
+      ],
+      "optional": [
+        "opacity",
+        "order"
+      ],
+      "record": "{ category: nominal, valueA: quantitative, valueB: quantitative }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "category",
+                "type": "nominal",
+                "label": "category"
+              },
+              {
+                "name": "period",
+                "type": "ordinal",
+                "label": "period"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "category",
+            "label": "Category",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "period",
+            "label": "Period",
+            "types": [
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 2,
+          "maxRecords": 100,
+          "maxSeries": 50
+        }
+      }
+    },
+    {
+      "id": "area",
+      "name": "Area",
+      "family": "trend",
+      "question": "A line with the region beneath filled, emphasizing accumulated magnitude.",
+      "marks": [
+        "area",
+        "line",
+        "rule"
+      ],
+      "required": [
+        "x",
+        "y"
+      ],
+      "optional": [
+        "saturation",
+        "opacity",
+        "hue"
+      ],
+      "record": "{ period: ordinal, value: quantitative }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "period",
+                "type": "temporal",
+                "label": "period"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "period",
+            "label": "Period",
+            "types": [
+              "temporal",
+              "ordinal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 2000
+        }
+      }
+    },
+    {
+      "id": "stacked-area",
+      "name": "Stacked area",
+      "family": "composition",
+      "question": "Composition over time. Order matters because only the bottom band has a common baseline.",
+      "marks": [
+        "area",
+        "line"
+      ],
+      "required": [
+        "x",
+        "y",
+        "hue",
+        "order"
+      ],
+      "optional": [
+        "opacity",
+        "saturation"
+      ],
+      "record": "{ period: ordinal, segment: nominal, value: quantitative }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "period",
+                "type": "temporal",
+                "label": "period"
+              },
+              {
+                "name": "series",
+                "type": "nominal",
+                "label": "series"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "period",
+            "label": "Period",
+            "types": [
+              "temporal",
+              "ordinal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "series",
+            "label": "Series",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 2000,
+          "maxSeries": 50
+        }
+      }
+    },
+    {
+      "id": "combo",
+      "name": "Bar + line",
+      "family": "comparison",
+      "question": "Aligned layers share x but use separate, explicitly labeled quantitative scales.",
+      "marks": [
+        "bar",
+        "line",
+        "point",
+        "rule"
+      ],
+      "required": [
+        "x",
+        "length",
+        "y"
+      ],
+      "optional": [
+        "hue",
+        "opacity"
+      ],
+      "record": "{ period: ordinal, volume: quantitative, rate: quantitative }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "period",
+                "type": "temporal",
+                "label": "period"
+              },
+              {
+                "name": "volume",
+                "type": "quantitative",
+                "label": "volume"
+              },
+              {
+                "name": "rate",
+                "type": "quantitative",
+                "label": "rate"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "period",
+            "label": "Period",
+            "types": [
+              "temporal",
+              "ordinal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "volume",
+            "label": "Volume",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "rate",
+            "label": "Rate",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 2000
+        }
+      }
+    },
+    {
+      "id": "scatter",
+      "name": "Scatter plot",
+      "family": "relationship",
+      "question": "Two quantitative positions reveal association, outliers, and clusters.",
+      "marks": [
+        "point",
+        "rule"
+      ],
+      "required": [
+        "x",
+        "y"
+      ],
+      "optional": [
+        "hue",
+        "shape",
+        "opacity",
+        "luminance"
+      ],
+      "record": "{ x: quantitative, y: quantitative, group?: nominal }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "x",
+                "type": "quantitative",
+                "label": "x"
+              },
+              {
+                "name": "y",
+                "type": "quantitative",
+                "label": "y"
+              },
+              {
+                "name": "label",
+                "type": "nominal",
+                "label": "label"
+              },
+              {
+                "name": "group",
+                "type": "nominal",
+                "label": "group"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "x",
+            "label": "X",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "y",
+            "label": "Y",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "label",
+            "label": "Label",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "data"
+          },
+          {
+            "id": "group",
+            "label": "Group",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 5000,
+          "maxSeries": 50
+        }
+      }
+    },
+    {
+      "id": "bubble",
+      "name": "Bubble chart",
+      "family": "relationship",
+      "question": "A scatter plot with a third variable mapped to area; outliers must be labeled.",
+      "marks": [
+        "point",
+        "rule",
+        "text"
+      ],
+      "required": [
+        "x",
+        "y",
+        "area"
+      ],
+      "optional": [
+        "hue",
+        "opacity",
+        "shape"
+      ],
+      "record": "{ x: quantitative, y: quantitative, size: quantitative, group?: nominal }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "x",
+                "type": "quantitative",
+                "label": "x"
+              },
+              {
+                "name": "y",
+                "type": "quantitative",
+                "label": "y"
+              },
+              {
+                "name": "size",
+                "type": "quantitative",
+                "label": "size"
+              },
+              {
+                "name": "label",
+                "type": "nominal",
+                "label": "label"
+              },
+              {
+                "name": "group",
+                "type": "nominal",
+                "label": "group"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "x",
+            "label": "X",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "y",
+            "label": "Y",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "size",
+            "label": "Size",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "label",
+            "label": "Label",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "data"
+          },
+          {
+            "id": "group",
+            "label": "Group",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 5000,
+          "maxSeries": 50
+        }
+      }
+    },
+    {
+      "id": "heat-map",
+      "name": "Heat map",
+      "family": "distribution",
+      "question": "A grid of tiles varying by luminance: position carries category, color carries value.",
+      "marks": [
+        "tile",
+        "text"
+      ],
+      "required": [
+        "x",
+        "y",
+        "luminance"
+      ],
+      "optional": [
+        "saturation",
+        "hue"
+      ],
+      "record": "{ row: nominal, column: nominal, value: quantitative }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "row",
+                "type": "nominal",
+                "label": "row"
+              },
+              {
+                "name": "column",
+                "type": "nominal",
+                "label": "column"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "row",
+            "label": "Row",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "column",
+            "label": "Column",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 2500
+        }
+      }
+    },
+    {
+      "id": "tile-grid",
+      "name": "Tile grid map",
+      "family": "distribution",
+      "question": "A choropleth-like map that gives every region equal area and stable position.",
+      "marks": [
+        "tile",
+        "text"
+      ],
+      "required": [
+        "x",
+        "y",
+        "luminance"
+      ],
+      "optional": [
+        "hue",
+        "saturation"
+      ],
+      "record": "{ region: nominal, row: ordinal, col: ordinal, value: quantitative }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "region",
+                "type": "nominal",
+                "label": "region"
+              },
+              {
+                "name": "row",
+                "type": "ordinal",
+                "label": "row"
+              },
+              {
+                "name": "column",
+                "type": "ordinal",
+                "label": "column"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "region",
+            "label": "Region",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "row",
+            "label": "Row",
+            "types": [
+              "ordinal",
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "column",
+            "label": "Column",
+            "types": [
+              "ordinal",
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 2500
+        }
+      }
+    },
+    {
+      "id": "choropleth",
+      "name": "Choropleth map",
+      "family": "distribution",
+      "question": "Real geography carries identity and luminance carries value, for every state, county, or congressional district. Area is a side effect, never the message.",
+      "marks": [
+        "area",
+        "rule",
+        "text"
+      ],
+      "required": [
+        "x",
+        "y",
+        "luminance"
+      ],
+      "optional": [
+        "containment",
+        "texture",
+        "hue"
+      ],
+      "record": "{ region: FIPS | postal code | name, value: quantitative, label?: nominal }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "regions",
+            "fields": [
+              {
+                "name": "region",
+                "type": "nominal",
+                "label": "region"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              },
+              {
+                "name": "label",
+                "type": "nominal",
+                "label": "label"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "region",
+            "label": "Region",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal",
+              "quantitative"
+            ],
+            "required": true,
+            "table": "regions"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "regions"
+          },
+          {
+            "id": "label",
+            "label": "Label",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "regions"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 3500
+        }
+      }
+    },
+    {
+      "id": "box-plot",
+      "name": "Box plot",
+      "family": "uncertainty",
+      "question": "A five-number summary plus outliers, exposing spread and skew hidden by a mean.",
+      "marks": [
+        "rule",
+        "bar",
+        "point"
+      ],
+      "required": [
+        "x",
+        "y",
+        "order"
+      ],
+      "optional": [
+        "hue",
+        "opacity",
+        "orientation"
+      ],
+      "record": "{ group: nominal, values: quantitative[] }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "group",
+                "type": "nominal",
+                "label": "group"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "group",
+            "label": "Group",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 10000,
+          "maxSeries": 100
+        }
+      }
+    },
+    {
+      "id": "waterfall",
+      "name": "Waterfall",
+      "family": "process",
+      "question": "Cumulative arithmetic made visible; increases and decreases are semantic states.",
+      "marks": [
+        "bar",
+        "rule",
+        "text"
+      ],
+      "required": [
+        "x",
+        "length",
+        "order"
+      ],
+      "optional": [
+        "hue",
+        "luminance"
+      ],
+      "record": "{ step: nominal, delta: quantitative }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "step",
+                "type": "ordinal",
+                "label": "step"
+              },
+              {
+                "name": "delta",
+                "type": "quantitative",
+                "label": "delta"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "step",
+            "label": "Step",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "delta",
+            "label": "Delta",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 100
+        }
+      }
+    },
+    {
+      "id": "funnel",
+      "name": "Funnel",
+      "family": "process",
+      "question": "Ordered stages with monotonically decreasing length. Drop-off is the story.",
+      "marks": [
+        "bar",
+        "text"
+      ],
+      "required": [
+        "length",
+        "order"
+      ],
+      "optional": [
+        "hue",
+        "saturation",
+        "x"
+      ],
+      "record": "{ stage: ordinal, value: quantitative }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "stage",
+                "type": "ordinal",
+                "label": "stage"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "stage",
+            "label": "Stage",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 100
+        }
+      }
+    },
+    {
+      "id": "doughnut",
+      "name": "Doughnut",
+      "family": "composition",
+      "question": "Angle is decoded poorly; use few parts and state values directly.",
+      "marks": [
+        "arc",
+        "text"
+      ],
+      "required": [
+        "angle",
+        "hue"
+      ],
+      "optional": [
+        "radius",
+        "luminance",
+        "texture"
+      ],
+      "record": "{ segment: nominal, value: quantitative }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "data",
+            "fields": [
+              {
+                "name": "segment",
+                "type": "nominal",
+                "label": "segment"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "segment",
+            "label": "Segment",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "data"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "data"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 100
+        }
+      }
+    },
+    {
+      "id": "treemap",
+      "name": "Tree map",
+      "family": "hierarchy",
+      "question": "Containment plus area shows two hierarchy levels in one rectangle.",
+      "marks": [
+        "area",
+        "text",
+        "rule"
+      ],
+      "required": [
+        "area",
+        "containment",
+        "hue"
+      ],
+      "optional": [
+        "luminance",
+        "order"
+      ],
+      "record": "{ group: nominal, name: nominal, value: quantitative }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "nodes",
+            "fields": [
+              {
+                "name": "id",
+                "type": "nominal",
+                "label": "id"
+              },
+              {
+                "name": "label",
+                "type": "nominal",
+                "label": "label"
+              },
+              {
+                "name": "parent",
+                "type": "nominal",
+                "label": "parent"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              },
+              {
+                "name": "group",
+                "type": "nominal",
+                "label": "group"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "id",
+            "label": "Id",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "label",
+            "label": "Label",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "parent",
+            "label": "Parent",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "nodes"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "group",
+            "label": "Group",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "nodes"
+          }
+        ],
+        "limits": {
+          "maxRecords": 1000,
+          "maxNodes": 1000,
+          "maxDepth": 10
+        }
+      }
+    },
+    {
+      "id": "circle-pack",
+      "name": "Circle packing",
+      "family": "hierarchy",
+      "question": "Literal nesting reveals structure but compares magnitude less precisely than a tree map.",
+      "marks": [
+        "area",
+        "text"
+      ],
+      "required": [
+        "area",
+        "containment",
+        "hue"
+      ],
+      "optional": [
+        "luminance",
+        "order"
+      ],
+      "record": "{ group: nominal, name: nominal, value: quantitative }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "nodes",
+            "fields": [
+              {
+                "name": "id",
+                "type": "nominal",
+                "label": "id"
+              },
+              {
+                "name": "label",
+                "type": "nominal",
+                "label": "label"
+              },
+              {
+                "name": "parent",
+                "type": "nominal",
+                "label": "parent"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              },
+              {
+                "name": "group",
+                "type": "nominal",
+                "label": "group"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "id",
+            "label": "Id",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "label",
+            "label": "Label",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "parent",
+            "label": "Parent",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "nodes"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "group",
+            "label": "Group",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "nodes"
+          }
+        ],
+        "limits": {
+          "maxRecords": 1000,
+          "maxNodes": 1000,
+          "maxDepth": 10
+        }
+      }
+    },
+    {
+      "id": "sunburst",
+      "name": "Sunburst",
+      "family": "hierarchy",
+      "question": "Concentric rings of arcs: angle carries magnitude, radius carries depth, and adjacency carries containment.",
+      "marks": [
+        "arc",
+        "text"
+      ],
+      "required": [
+        "angle",
+        "radius",
+        "containment",
+        "hue"
+      ],
+      "optional": [
+        "luminance",
+        "texture",
+        "order"
+      ],
+      "record": "{ id: nominal, label: nominal, parent?: nominal, value?: quantitative }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "nodes",
+            "fields": [
+              {
+                "name": "id",
+                "type": "nominal",
+                "label": "id"
+              },
+              {
+                "name": "label",
+                "type": "nominal",
+                "label": "label"
+              },
+              {
+                "name": "parent",
+                "type": "nominal",
+                "label": "parent"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              },
+              {
+                "name": "group",
+                "type": "nominal",
+                "label": "group"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "id",
+            "label": "Id",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "label",
+            "label": "Label",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "parent",
+            "label": "Parent",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "nodes"
+          },
+          {
+            "id": "value",
+            "label": "Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": false,
+            "table": "nodes"
+          },
+          {
+            "id": "group",
+            "label": "Group",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "nodes"
+          }
+        ],
+        "limits": {
+          "maxRecords": 1000,
+          "maxNodes": 1000,
+          "maxDepth": 10
+        }
+      }
+    },
+    {
+      "id": "sankey",
+      "name": "Sankey",
+      "family": "flow",
+      "question": "Nodes are rectangles and conserved ribbon width carries volume from source to target.",
+      "marks": [
+        "node",
+        "link",
+        "text"
+      ],
+      "required": [
+        "x",
+        "y",
+        "length",
+        "connection",
+        "hue"
+      ],
+      "optional": [
+        "opacity",
+        "order"
+      ],
+      "record": "{ nodes: Node[], links: { source, target, value }[] }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "nodes",
+            "fields": [
+              {
+                "name": "id",
+                "type": "nominal",
+                "label": "id"
+              },
+              {
+                "name": "label",
+                "type": "nominal",
+                "label": "label"
+              },
+              {
+                "name": "group",
+                "type": "nominal",
+                "label": "group"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          },
+          {
+            "name": "links",
+            "fields": [
+              {
+                "name": "source",
+                "type": "nominal",
+                "label": "source"
+              },
+              {
+                "name": "target",
+                "type": "nominal",
+                "label": "target"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "nodeId",
+            "label": "Node Id",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "nodeLabel",
+            "label": "Node Label",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "nodeGroup",
+            "label": "Node Group",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "nodes"
+          },
+          {
+            "id": "nodeValue",
+            "label": "Node Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": false,
+            "table": "nodes"
+          },
+          {
+            "id": "source",
+            "label": "Source",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "links"
+          },
+          {
+            "id": "target",
+            "label": "Target",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "links"
+          },
+          {
+            "id": "linkValue",
+            "label": "Link Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "links"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 1000,
+          "maxNodes": 250,
+          "maxLinks": 1000
+        }
+      }
+    },
+    {
+      "id": "chord",
+      "name": "Chord chart",
+      "family": "network",
+      "question": "A square adjacency matrix bent into a circle; ribbons show mutual volume.",
+      "marks": [
+        "arc",
+        "link",
+        "text"
+      ],
+      "required": [
+        "angle",
+        "connection",
+        "hue"
+      ],
+      "optional": [
+        "opacity",
+        "luminance",
+        "order"
+      ],
+      "record": "{ names: nominal[], matrix: quantitative[][] }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "nodes",
+            "fields": [
+              {
+                "name": "id",
+                "type": "nominal",
+                "label": "id"
+              },
+              {
+                "name": "label",
+                "type": "nominal",
+                "label": "label"
+              },
+              {
+                "name": "group",
+                "type": "nominal",
+                "label": "group"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          },
+          {
+            "name": "links",
+            "fields": [
+              {
+                "name": "source",
+                "type": "nominal",
+                "label": "source"
+              },
+              {
+                "name": "target",
+                "type": "nominal",
+                "label": "target"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "nodeId",
+            "label": "Node Id",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "nodeLabel",
+            "label": "Node Label",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "nodeGroup",
+            "label": "Node Group",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "nodes"
+          },
+          {
+            "id": "nodeValue",
+            "label": "Node Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": false,
+            "table": "nodes"
+          },
+          {
+            "id": "source",
+            "label": "Source",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "links"
+          },
+          {
+            "id": "target",
+            "label": "Target",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "links"
+          },
+          {
+            "id": "linkValue",
+            "label": "Link Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "links"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 1000,
+          "maxNodes": 250,
+          "maxLinks": 1000
+        }
+      }
+    },
+    {
+      "id": "network",
+      "name": "Node-link network",
+      "family": "network",
+      "question": "Connection is primary. Node position carries no value, only topology.",
+      "marks": [
+        "node",
+        "link"
+      ],
+      "required": [
+        "connection",
+        "radius",
+        "hue"
+      ],
+      "optional": [
+        "opacity",
+        "shape",
+        "luminance"
+      ],
+      "record": "{ nodes: Node[], links: { source, target, strength }[] }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "nodes",
+            "fields": [
+              {
+                "name": "id",
+                "type": "nominal",
+                "label": "id"
+              },
+              {
+                "name": "label",
+                "type": "nominal",
+                "label": "label"
+              },
+              {
+                "name": "group",
+                "type": "nominal",
+                "label": "group"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          },
+          {
+            "name": "links",
+            "fields": [
+              {
+                "name": "source",
+                "type": "nominal",
+                "label": "source"
+              },
+              {
+                "name": "target",
+                "type": "nominal",
+                "label": "target"
+              },
+              {
+                "name": "value",
+                "type": "quantitative",
+                "label": "value"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "nodeId",
+            "label": "Node Id",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "nodeLabel",
+            "label": "Node Label",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "nodeGroup",
+            "label": "Node Group",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "nodes"
+          },
+          {
+            "id": "nodeValue",
+            "label": "Node Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": false,
+            "table": "nodes"
+          },
+          {
+            "id": "source",
+            "label": "Source",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "links"
+          },
+          {
+            "id": "target",
+            "label": "Target",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "links"
+          },
+          {
+            "id": "linkValue",
+            "label": "Link Value",
+            "types": [
+              "quantitative"
+            ],
+            "required": true,
+            "table": "links"
+          }
+        ],
+        "limits": {
+          "minRecords": 1,
+          "maxRecords": 1000,
+          "maxNodes": 250,
+          "maxLinks": 1000
+        }
+      }
+    },
+    {
+      "id": "decision-tree",
+      "name": "Decision tree",
+      "family": "process",
+      "question": "Ordered decisions contain terminal outcomes; every leaf is decidable.",
+      "marks": [
+        "node",
+        "link",
+        "text",
+        "rule"
+      ],
+      "required": [
+        "connection",
+        "containment",
+        "x",
+        "y"
+      ],
+      "optional": [
+        "hue",
+        "luminance",
+        "shape"
+      ],
+      "record": "{ name, note?, class?, children?: recursive }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "nodes",
+            "fields": [
+              {
+                "name": "id",
+                "type": "nominal",
+                "label": "id"
+              },
+              {
+                "name": "label",
+                "type": "nominal",
+                "label": "label"
+              },
+              {
+                "name": "parent",
+                "type": "nominal",
+                "label": "parent"
+              },
+              {
+                "name": "group",
+                "type": "nominal",
+                "label": "group"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "id",
+            "label": "Id",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "label",
+            "label": "Label",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "parent",
+            "label": "Parent",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "nodes"
+          },
+          {
+            "id": "group",
+            "label": "Group",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "nodes"
+          }
+        ],
+        "limits": {
+          "maxRecords": 1000,
+          "maxNodes": 1000,
+          "maxDepth": 10
+        }
+      }
+    },
+    {
+      "id": "dendrogram",
+      "name": "Dendrogram",
+      "family": "hierarchy",
+      "question": "Pure structure: depth and adjacency mean something; horizontal order does not.",
+      "marks": [
+        "node",
+        "link",
+        "text"
+      ],
+      "required": [
+        "connection",
+        "x",
+        "y"
+      ],
+      "optional": [
+        "hue",
+        "luminance",
+        "order"
+      ],
+      "record": "{ name, children?: recursive }",
+      "authoring": {
+        "tables": [
+          {
+            "name": "nodes",
+            "fields": [
+              {
+                "name": "id",
+                "type": "nominal",
+                "label": "id"
+              },
+              {
+                "name": "label",
+                "type": "nominal",
+                "label": "label"
+              },
+              {
+                "name": "parent",
+                "type": "nominal",
+                "label": "parent"
+              },
+              {
+                "name": "group",
+                "type": "nominal",
+                "label": "group"
+              }
+            ]
+          }
+        ],
+        "roles": [
+          {
+            "id": "id",
+            "label": "Id",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "label",
+            "label": "Label",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": true,
+            "table": "nodes"
+          },
+          {
+            "id": "parent",
+            "label": "Parent",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "nodes"
+          },
+          {
+            "id": "group",
+            "label": "Group",
+            "types": [
+              "nominal",
+              "ordinal",
+              "temporal"
+            ],
+            "required": false,
+            "table": "nodes"
+          }
+        ],
+        "limits": {
+          "maxRecords": 1000,
+          "maxNodes": 1000,
+          "maxDepth": 10
+        }
+      }
+    }
+  ],
+  "icons": [
+    "person",
+    "document",
+    "data",
+    "process",
+    "globe",
+    "lock",
+    "spark",
+    "flag",
+    "question",
+    "link",
+    "layers",
+    "compass"
+  ],
+  "limits": {
+    "items": 12,
+    "groupedItems": 24,
+    "groups": 8,
+    "groupLabel": 80,
+    "meta": 40,
+    "concepts": 16,
+    "properties": 12,
+    "relationships": 32,
+    "columns": 4
+  },
+  "templatePacks": [
+    {
+      "id": "argument",
+      "label": "Argument & evidence",
+      "presets": [
+        {
+          "id": "decision-brief",
+          "label": "Decision brief",
+          "description": "State a position, why it holds, what it changes, and the next move."
+        },
+        {
+          "id": "claim-evidence-matrix",
+          "label": "Claim / evidence matrix",
+          "description": "Sort claims by how well the sources support them."
+        },
+        {
+          "id": "assumptions-questions",
+          "label": "Assumptions & open questions",
+          "description": "Make what the argument takes for granted visible."
+        },
+        {
+          "id": "uncertainties",
+          "label": "Uncertainties",
+          "description": "List what is not known, how confident you are, and what would resolve it."
+        },
+        {
+          "id": "prompt-exchange",
+          "label": "Prompt & response",
+          "description": "Record a prompt and the reply it produced at each thinking level."
+        }
+      ]
+    },
+    {
+      "id": "structure",
+      "label": "Structure & systems",
+      "presets": [
+        {
+          "id": "concept-map",
+          "label": "Concept map",
+          "description": "Group the parts of a system into named regions."
+        },
+        {
+          "id": "responsibility-swimlane",
+          "label": "Responsibility swimlane",
+          "description": "Show who does what, and where work is handed off."
+        },
+        {
+          "id": "method",
+          "label": "Method with gates",
+          "description": "Ordered stages, each with the check that must pass before moving on."
+        },
+        {
+          "id": "concept-model",
+          "label": "Concept model",
+          "description": "Define the concepts in play, their properties, and how they relate."
+        }
+      ]
+    },
+    {
+      "id": "change",
+      "label": "Change & comparison",
+      "presets": [
+        {
+          "id": "before-after",
+          "label": "Before / after",
+          "description": "Contrast a current state with a connected future one."
+        },
+        {
+          "id": "now-next-later",
+          "label": "Now / next / later",
+          "description": "Arrange initiatives or ideas across three horizons."
+        },
+        {
+          "id": "two-by-two",
+          "label": "Two-by-two",
+          "description": "Position ideas against two named dimensions."
+        },
+        {
+          "id": "key-findings",
+          "label": "Key findings",
+          "description": "Lead with the measures and results that carry the argument."
+        },
+        {
+          "id": "people-perspectives",
+          "label": "People & perspectives",
+          "description": "Introduce the people whose views shape the story."
+        }
+      ]
+    }
+  ]
+}

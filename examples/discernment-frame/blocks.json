@@ -1,0 +1,801 @@
+{
+  "chapters": [
+    {
+      "id": "opening-notes",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "For most of human history, making was expensive. A first draft cost a week, a prototype cost a month, and that cost is what made you decide carefully before you began. AI changes that. It makes production cheap.",
+          "source": [
+            "c03"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The image the original talk opened on was a production pipeline breaking. Not failing — breaking open, so that what used to be a narrow pipe became a wide one. That is the whole of the change: the pipe is no longer the constraint.",
+          "source": [
+            "c03"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "But when production becomes cheap, something else becomes scarce. The bottleneck does not disappear; it moves. It moves out of the making and into the deciding — what is worth making, which version deserves to survive, and whether the result can be trusted once it leaves your hands.",
+          "claims": [
+            {
+              "quote": "something else becomes scarce",
+              "source": [
+                "c03"
+              ]
+            }
+          ],
+          "source": [
+            "c03"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "This note tries to say what that moved bottleneck consists of. Not a mood about AI: four named disciplines, each with a method you can practise and a demo that shows it working.",
+          "source": [
+            "c01"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The talk this came from ran forty minutes with four demos. Its core arc was one line: AI makes creation cheap, the bottleneck shifts to human discernment, and the discernment has four parts. What follows is the same argument written for a reader instead of a room.",
+          "source": [
+            "c01"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "A talk has to land in the moment; a note can be checked. So this version keeps the four demos and drops the timing cues, the thank-you slide, and everything else that existed to hold an audience's attention rather than to hold an argument.",
+          "source": [
+            "c01"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "There is a version of this argument that is only anxiety: the machines are coming for the work. This is not that. The claim is narrower and more useful — the cost of the first artifact has collapsed, and every discipline that cost used to enforce now has to be enforced on purpose.",
+          "source": [
+            "c03",
+            "c01"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slide-2-the-shift-provocation",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Writing took time. Designing took time. Coding took time. Research took time. Four tasks with one shared property: the cost of the attempt was high enough that you thought before you attempted.",
+          "claims": [
+            {
+              "quote": "Writing took time. Designing took time. Coding took time. Research took time.",
+              "source": [
+                "c04"
+              ]
+            }
+          ],
+          "source": [
+            "c04"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "That cost is falling toward zero. The discipline the cost used to enforce has to be enforced some other way: deliberately, by somebody who decided to. That is the whole of the shift, and it happened in about three years.",
+          "source": [
+            "c04"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The point is not that the models are impressive. The point is that it took seconds. If everyone can produce, what becomes valuable is whatever cannot be produced on demand.",
+          "source": [
+            "c04"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Four words cover it: imagination, taste, perseverance, judgment. In practice they run as a loop — imagine, select, refine, commit, and back to imagine — because the order is not a sequence you complete once.",
+          "source": [
+            "c05"
+          ]
+        },
+        {
+          "kind": "figure",
+          "componentId": "region-grid",
+          "variant": "pillars",
+          "title": "Four disciplines, and the practices that make them real",
+          "altText": "A four-column grid: imagination, taste, perseverance and judgment, each holding the two practices that make it more than a slogan.",
+          "groups": [
+            "Imagination — explore",
+            "Taste — select",
+            "Perseverance — refine",
+            "Judgment — commit"
+          ],
+          "items": [
+            {
+              "label": "Progressive concretization",
+              "detail": "Intuition to concept to vocabulary to framework to form to artifact.",
+              "group": 0,
+              "meta": "Explore",
+              "icon": "compass"
+            },
+            {
+              "label": "Representation hopping",
+              "detail": "Describe, sketch, model, simulate, critique, prototype, compress.",
+              "group": 0,
+              "meta": "Explore"
+            },
+            {
+              "label": "Study before you make",
+              "detail": "Read the material, the audience and the conventions first.",
+              "group": 1,
+              "meta": "Select",
+              "icon": "spark"
+            },
+            {
+              "label": "Add only what belongs",
+              "detail": "Selection is subtraction; the rejections are the method.",
+              "group": 1,
+              "meta": "Select"
+            },
+            {
+              "label": "Generate, inspect, test, learn",
+              "detail": "Treat every version as provisional, including the good ones.",
+              "group": 2,
+              "meta": "Refine",
+              "icon": "process"
+            },
+            {
+              "label": "Artifacts disposable, structure durable",
+              "detail": "What survives is intent, constraints, principles and learning.",
+              "group": 2,
+              "meta": "Refine"
+            },
+            {
+              "label": "Name validated, inferred, declared",
+              "detail": "Three words that keep a fluent paragraph honest.",
+              "group": 3,
+              "meta": "Commit",
+              "icon": "lock"
+            },
+            {
+              "label": "Scale verification with consequence",
+              "detail": "The burden of checking follows the cost of being wrong.",
+              "group": 3,
+              "meta": "Commit"
+            }
+          ],
+          "source": [
+            "c05",
+            "c06",
+            "c08",
+            "c10",
+            "c12"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Scarcity is not a property of a skill. It is a property of a cost curve. Nothing about taste or judgment became harder this decade; production became cheaper, which left them as the constraints that remain.",
+          "source": [
+            "c04"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "None of the four disciplines is new. What is new is that they are now the binding constraint rather than a refinement layered on top of expensive production.",
+          "source": [
+            "c04",
+            "c05"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The practical consequence is oddly specific. Most of what counted as getting good at this work was getting fast at producing a first version. That is precisely the part the models took.",
+          "source": [
+            "c04"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "So the four words are not virtues. They are the job description of whatever is left after the machines take the part that used to cost something.",
+          "source": [
+            "c05"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slide-4-imagination-header-principle",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Imagination asks one question: what could this become? The answer is not a mood. It is two methods, and both can be run on purpose.",
+          "source": [
+            "c06"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The first is progressive concretization: intuition to concept, concept to vocabulary, vocabulary to framework, framework to form, form to artifact. Each step makes the idea more specific without deciding it yet.",
+          "source": [
+            "c06"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The second is representation hopping: describe it, sketch it, model it, simulate it, critique it, prototype it, compress it. A drawing exposes what a paragraph hides, and a prototype exposes what a drawing hides.",
+          "source": [
+            "c06"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "A vague idea is not an unfinished clear idea. It is a different object, and the only way to find out what it is asking is to give it a form and look at what that form reveals.",
+          "source": [
+            "c06"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "This is where cheapness helps most. Seven representations used to cost seven attempts. They now cost a minute, which changes what the first hour of a project can be for.",
+          "source": [
+            "c07"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The demo is one sentence — modern life gives us more connection but less intimacy — pushed through five forms at roughly forty-five seconds each: a thesis statement, a visual metaphor, a short-film concept, a critique of that concept, and a one-sentence takeaway.",
+          "source": [
+            "c07"
+          ]
+        },
+        {
+          "kind": "figure",
+          "componentId": "system-flow",
+          "variant": "model-pipeline",
+          "title": "One vague sentence, five representations",
+          "altText": "A five-stage sequence taking one vague sentence through a thesis, a visual metaphor, a film concept, a critique, and a one-line takeaway.",
+          "items": [
+            {
+              "label": "Thesis statement",
+              "detail": "The idea stated as an argument.",
+              "meta": "Form 1"
+            },
+            {
+              "label": "Visual metaphor",
+              "detail": "The same idea as an image.",
+              "meta": "Form 2"
+            },
+            {
+              "label": "Short-film concept",
+              "detail": "The idea given time and a scene.",
+              "meta": "Form 3"
+            },
+            {
+              "label": "Critique of the concept",
+              "detail": "Where the idea fails in this form.",
+              "meta": "Form 4"
+            },
+            {
+              "label": "Compressed takeaway",
+              "detail": "What survived every form.",
+              "meta": "Form 5"
+            }
+          ],
+          "source": [
+            "c07"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Four of the five are not the answer. They are what makes the answer visible. The goal is not to prompt until the model produces the right thing; it is to move the idea through enough forms that you discover what the question really is.",
+          "claims": [
+            {
+              "quote": "move the idea through enough forms that you discover what the question really is",
+              "source": [
+                "c07"
+              ]
+            }
+          ],
+          "source": [
+            "c07"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The method needs a stopping rule, and the demo supplies one: stop when a new form stops exposing anything new. Imagination without that rule is only motion, and motion is the one thing cheap production never runs short of.",
+          "source": [
+            "c06",
+            "c07"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slide-6-taste-header-principle",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Taste asks what belongs. The deck compresses it into two instructions: study before you make, and add only what belongs. Terse, and easier to agree with than to do.",
+          "source": [
+            "c08"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The demo is deliberately unfair to the model. Ask for ten concepts against a plain brief — a campaign name, an opening paragraph — and you get ten. The interesting part is not the ten. It is why nine of them are wrong.",
+          "source": [
+            "c09"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Study first is the half people skip. Before choosing among the ten, read the brief, the audience, and the existing language the work has to live inside.",
+          "source": [
+            "c08"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The second half is subtraction. Add only what belongs is not minimalism as a style; it is a test every element has to pass against what the work is for.",
+          "source": [
+            "c08"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The rejections are the method, and they are specific: clever but generic; surprising, but it violates the tone; less flashy, but it contains the central idea. None of those three is a preference. Each is a reason, and the reason is what the next prompt can carry.",
+          "source": [
+            "c09"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "AI gives you optionality. Taste converts optionality into direction. It is also the one discipline here that gets harder, not easier, every time the model gets better at producing.",
+          "claims": [
+            {
+              "quote": "Taste converts optionality into direction",
+              "source": [
+                "c09"
+              ]
+            }
+          ],
+          "source": [
+            "c09"
+          ]
+        },
+        {
+          "kind": "figure",
+          "componentId": "comparison",
+          "variant": "old-new",
+          "title": "What the model supplies, and what taste decides",
+          "altText": "Two columns contrasting the ten generated options with the one direction that survives selection, and the reasons each rejection carries.",
+          "groups": [
+            "What the model gives",
+            "What taste decides"
+          ],
+          "items": [
+            {
+              "label": "Ten concepts in seconds",
+              "detail": "Optionality is now free, and free is not the same as useful.",
+              "group": 0,
+              "meta": "Supply"
+            },
+            {
+              "label": "Every option reads well",
+              "detail": "Fluency is not evidence that an option fits the brief.",
+              "group": 0,
+              "meta": "Supply"
+            },
+            {
+              "label": "One concept, with reasons",
+              "detail": "The chosen one is the one that survives the stated constraints.",
+              "group": 1,
+              "meta": "Direction"
+            },
+            {
+              "label": "Nine rejections, each specific",
+              "detail": "Clever but generic; off-tone; or the one that holds the idea.",
+              "group": 1,
+              "meta": "Direction"
+            }
+          ],
+          "source": [
+            "c09"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Taste is also the most misnamed of the four. From outside it looks like preference, because preferences are what it resembles when you cannot see the reasons. From inside it is closer to a specification: constraints, audience, tone, and the reason an option fails them.",
+          "source": [
+            "c08"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slide-8-perseverance-header-principle",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Perseverance asks whether you have pushed it far enough. Its key phrase is the one worth keeping: artifacts are disposable, structure is durable. It is the sentence that has to survive a week of looking at something good.",
+          "claims": [
+            {
+              "quote": "artifacts are disposable, structure is durable",
+              "source": [
+                "c10"
+              ]
+            }
+          ],
+          "source": [
+            "c10"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The process runs generate, inspect, test, learn, discard, regenerate. What survives a round is not the artifact. It is the intent, the structure, the constraints, the principles, the standards, and whatever the failure taught.",
+          "source": [
+            "c10"
+          ]
+        },
+        {
+          "kind": "figure",
+          "componentId": "feedback-loop",
+          "title": "The refinement loop",
+          "altText": "A four-step loop: generate, inspect, test and learn, then discard and regenerate — with intent and structure carried around the loop.",
+          "items": [
+            {
+              "label": "Generate",
+              "detail": "Produce a version you are willing to lose.",
+              "meta": "Step 1"
+            },
+            {
+              "label": "Inspect",
+              "detail": "Name what is wrong: structure, audience, tone, assumption.",
+              "meta": "Step 2"
+            },
+            {
+              "label": "Test and learn",
+              "detail": "What the failure teaches becomes a constraint.",
+              "meta": "Step 3"
+            },
+            {
+              "label": "Discard and regenerate",
+              "detail": "Regenerate against the constraints, not from scratch.",
+              "meta": "Step 4"
+            }
+          ],
+          "source": [
+            "c10",
+            "c11"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The demo is the hardest one to watch. Take a piece the model produced that is genuinely good, say so out loud, and then say the second sentence: this is good, but it is wrong. The structure is wrong. The audience is mismatched. The tone is off. A hidden assumption is broken.",
+          "source": [
+            "c11"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Attachment is the failure mode, and cheap production feeds it. When something took a week, you were invested before you could see it clearly. When it took four seconds, the only thing keeping a weak version alive is reluctance.",
+          "source": [
+            "c10",
+            "c11"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The list of what survives is short enough to memorise: intent, structure, constraints, principles, standards, learning. Everything else is inventory, and inventory is the one thing cheap production hands you by the crate.",
+          "source": [
+            "c10"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Keep the central insight, one line, the structure, and the constraint. Discard the rest, and regenerate against those guardrails. Cheap production should make us less attached to what we produce, not more.",
+          "source": [
+            "c11"
+          ]
+        },
+        {
+          "kind": "pullquote",
+          "quote": "Perseverance is commitment to the problem, not attachment to the current solution.",
+          "attribution": "Demo 3: destroy something good",
+          "source": [
+            "c11"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The hardest sentence in the demo is the first one. Saying this is good costs you the excuse that the model failed, and what is left is a judgement about structure, audience, tone, or a hidden assumption — which is the part you have to do yourself.",
+          "source": [
+            "c11"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slide-10-judgment-header-principle",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Judgment asks whether you are justified in trusting this. The deck gives it a vocabulary of three words, and the vocabulary is the discipline. Three words, and most of the work is using them out loud.",
+          "source": [
+            "c12"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Validated means we checked it. Inferred means the evidence points toward it. Declared means it is an assumption, a preference, an intention, or a creative decision — and it should be labelled as one.",
+          "source": [
+            "c12"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The demo is a paragraph. Give a model the source data, ask what happened, and it answers: customers left because the new experience was too complicated. Four claims, one voice, and nothing in the sentence to say they differ in kind.",
+          "source": [
+            "c13"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The three words are not grades. Declared is not a lesser category: a creative decision declared as one is as respectable as a validated fact. It is only a problem when it is dressed as the other.",
+          "source": [
+            "c12"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "What makes the confident paragraph dangerous is not that it is wrong. It is that every sentence in it is true in a different way, and the paragraph gives the reader no way to tell which is which.",
+          "source": [
+            "c13"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Pulled apart: churn increased is validated. It increased after the redesign is validated. The redesign caused the churn is inferred. Customers found it complicated is declared, unless somebody actually asked them. The prose flattened four levels of certainty into one confident voice, and the burden of checking should scale with the cost of being wrong.",
+          "claims": [
+            {
+              "quote": "The prose flattened four levels of certainty into one confident voice",
+              "source": [
+                "c13"
+              ]
+            }
+          ],
+          "source": [
+            "c13"
+          ]
+        },
+        {
+          "kind": "figure",
+          "componentId": "semantic-matrix",
+          "variant": "crosswalk-grid",
+          "title": "One confident paragraph, sorted by what we actually know",
+          "altText": "Three columns sorting the four claims in the paragraph into validated, inferred, and declared.",
+          "groups": [
+            "Validated",
+            "Inferred",
+            "Declared"
+          ],
+          "items": [
+            {
+              "label": "Customer churn increased",
+              "detail": "Directly present in the data the model was given.",
+              "group": 0,
+              "meta": "Checked"
+            },
+            {
+              "label": "The increase followed the redesign",
+              "detail": "Sequencing is visible; the cause is not.",
+              "group": 0,
+              "meta": "Checked"
+            },
+            {
+              "label": "The redesign caused the churn",
+              "detail": "A hypothesis the data supports without establishing.",
+              "group": 1,
+              "meta": "Hypothesis",
+              "icon": "question"
+            },
+            {
+              "label": "Customers found it complicated",
+              "detail": "An assumption until research exists to confirm it.",
+              "group": 2,
+              "meta": "Assumption",
+              "icon": "flag"
+            }
+          ],
+          "source": [
+            "c13"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The vocabulary also settles arguments that otherwise go in circles. Two people can disagree about a sentence and agree completely about which parts of it are validated, which are inferred, and which are declared. Usually, that agreement is the whole disagreement.",
+          "source": [
+            "c12",
+            "c13"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slide-12-layer-cake-all",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "Shown together, the four stack. Imagination explores what could this become. Taste selects what belongs. Perseverance refines until it holds. Judgment commits — or refuses to.",
+          "source": [
+            "c14"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The picture is a cake rather than a ladder, and the reason is structural: selection is meaningless without something to select from, and judgment has nothing to judge until something has been refined. Each layer rests on the one below it.",
+          "source": [
+            "c14"
+          ]
+        },
+        {
+          "kind": "figure",
+          "componentId": "architecture-stack",
+          "variant": "vertical-tiers",
+          "title": "Four layers, and the loop underneath them",
+          "altText": "Four stacked tiers — imagination, taste, perseverance and judgment — each with its verb and question, above a loop that returns from judgment to imagination.",
+          "items": [
+            {
+              "label": "Imagination — explore",
+              "detail": "What could this become?",
+              "meta": "Layer 1"
+            },
+            {
+              "label": "Taste — select",
+              "detail": "What belongs?",
+              "meta": "Layer 2"
+            },
+            {
+              "label": "Perseverance — refine",
+              "detail": "Have we pushed it far enough?",
+              "meta": "Layer 3"
+            },
+            {
+              "label": "Judgment — commit",
+              "detail": "Are we justified in trusting it?",
+              "meta": "Layer 4"
+            }
+          ],
+          "source": [
+            "c14"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "But the order is not a pipeline you run once. Judgment may reveal that you need more imagination. Taste may tell you the original framing was wrong. Perseverance may turn up a better possibility than the one you were refining. These are not steps you perform exactly once.",
+          "claims": [
+            {
+              "quote": "These are not steps you perform exactly once",
+              "source": [
+                "c15"
+              ]
+            }
+          ],
+          "source": [
+            "c15"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The cake in the original slide has a loop drawn underneath it, and the loop is the part that survives translation into a real project. You will go back. Most of the value sits in the going back.",
+          "source": [
+            "c14",
+            "c15"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "A pipeline has a finish line. This does not. The moment you treat the four as a checklist you completed, you have stopped doing the work the bottleneck moved to.",
+          "source": [
+            "c15"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The honest picture is therefore a loop: imagine, select, refine, commit, and back to imagine. You move backward constantly, and the backward moves are the work.",
+          "source": [
+            "c15"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Stacked this way, the four also describe what a bad day looks like. Imagination with no taste. Taste with nothing worth selecting. Perseverance spent refining the wrong structure. Judgment called in so late that it can only approve what has already been built.",
+          "source": [
+            "c14"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "slide-14-closing-thesis",
+      "blocks": [
+        {
+          "kind": "paragraph",
+          "text": "AI is making our ability to produce almost unlimited. That does not make human creativity less important. It changes where human creativity lives. The second sentence is the one that needs defending.",
+          "source": [
+            "c16"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "Less in the act of producing the first artifact. More in imagining what could exist, recognising what deserves to exist, staying with it until it becomes good, and knowing when it is trustworthy enough to enter the world.",
+          "source": [
+            "c16"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The four disciplines are not a defence of human work against machines. They are a description of where the work went once the machines took over the part that used to be expensive.",
+          "source": [
+            "c16"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "AI accelerates the loop. Human discernment directs it. When production is close to free, the directing is not a nicety layered on top of the work — it is the work.",
+          "claims": [
+            {
+              "quote": "AI accelerates the loop. Human discernment directs it",
+              "source": [
+                "c16"
+              ]
+            }
+          ],
+          "source": [
+            "c16"
+          ]
+        },
+        {
+          "kind": "pullquote",
+          "quote": "AI accelerates the loop. Human discernment directs it.",
+          "attribution": "Closing thesis",
+          "source": [
+            "c16"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The closing slide made one more claim quietly, in four coloured underlines beneath four phrases. It is a design decision, and like every design decision it says something the prose does not: these are four kinds of attention, not four steps of one method.",
+          "source": [
+            "c16"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "What is left with the reader is not a method to install. It is a place to look when the work feels finished and you cannot yet say why it is not.",
+          "source": [
+            "c16"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "The talk ended on the thesis and did not summarise the ten things it had covered. A note can afford the same restraint. What follows the last paragraph is the reader's own work.",
+          "source": [
+            "c16"
+          ]
+        },
+        {
+          "kind": "paragraph",
+          "text": "None of this is a forecast. It is a description of where the effort went in one kind of work, written early enough to be wrong about the details while being, I think, right about the direction.",
+          "source": [
+            "c16"
+          ]
+        }
+      ]
+    }
+  ]
+}

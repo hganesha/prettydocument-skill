@@ -1,0 +1,6 @@
+/drafts/
+/out/
+/design-systems/
+/brand.config.json
+node_modules/
+.DS_Store

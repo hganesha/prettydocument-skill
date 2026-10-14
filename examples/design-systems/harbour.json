@@ -1,0 +1,29 @@
+{
+  "id": "harbour",
+  "label": "Harbour",
+  "tokens": {
+    "colors": {
+      "canvas": "#fbfaf7",
+      "surface": "#f0eee8",
+      "ink": "#14202b",
+      "muted": "#52606d",
+      "line": "#d9d6cd",
+      "accent": "#1d5c7a",
+      "emphasis": "#b2412e"
+    },
+    "fonts": {
+      "display": "source-serif-4",
+      "body": "source-serif-4",
+      "ui": "inter",
+      "mono": "jetbrains-mono"
+    },
+    "chart": [
+      "#b2412e",
+      "#7d8b39",
+      "#3b914d",
+      "#3b7c91",
+      "#533b91",
+      "#52606d"
+    ]
+  }
+}

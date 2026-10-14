@@ -1,0 +1,15 @@
+{
+  "name": "prettydocument-skill",
+  "version": "0.1.0",
+  "description": "An agent skill (Claude Code, Codex, any SKILL.md agent) that turns an existing document into a branded, standalone visual essay.",
+  "private": false,
+  "type": "module",
+  "license": "UNLICENSED",
+  "engines": { "node": ">=20" },
+  "bin": { "prettydocument-install": "./install.mjs" },
+  "files": ["SKILL.md", "AGENTS.md", "README.md", "install.mjs", "brand.config.example.json", "examples", "references", "registry", "scripts", "vendor"],
+  "scripts": {
+    "install-skill": "node install.mjs",
+    "test": "node --test test/*.test.mjs"
+  }
+}

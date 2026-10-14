@@ -1,0 +1,33 @@
+{
+  "flow": [
+    "system-flow",
+    "sequence-flow",
+    "pipeline-flow",
+    "funnel"
+  ],
+  "grid": [
+    "comparison",
+    "semantic-matrix",
+    "crosswalk",
+    "translation-bridge",
+    "boundary",
+    "region-grid"
+  ],
+  "stack": [
+    "layered-stack",
+    "state-track",
+    "assembly",
+    "staircase"
+  ],
+  "network": [
+    "branching-tree",
+    "node-edge-network",
+    "bus",
+    "swimlane"
+  ],
+  "radial": [
+    "feedback-loop",
+    "orbital-system",
+    "nested-containment"
+  ]
+}

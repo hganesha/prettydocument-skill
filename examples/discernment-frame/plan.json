@@ -1,0 +1,94 @@
+{
+  "documentId": "discernment-frame",
+  "workingTitle": "The discernment frame",
+  "centralThesis": "AI makes production cheap, so the scarce skill moves from making the first artifact to deciding what should exist, what deserves to survive, and what can be trusted.",
+  "narrativeArc": "Start with the cost collapse, name the bottleneck it created, walk the four disciplines one at a time with the demo that proves each, then stack them and show why the frame is a loop rather than a pipeline. Close by relocating human creativity rather than defending it.",
+  "sourceWordCount": 1964,
+  "structureNotes": [
+    "Dropped “SLIDE-BY-SLIDE BLUEPRINT”, “Slide 15 – Thank You / Q&A Prompt”, “AESTHETIC QUICKGUIDE FOR DESIGNERS”, “SPEAKER RHYTHM REMINDER”: scaffolding around the talk, not part of the argument. Restore it if you disagree — the essay is yours.",
+    "Merged “Slide 1 – Title & Thesis Statement” (91 words) into “Opening notes”: too thin to stand as a chapter. Check the title still names the argument.",
+    "Merged “Slide 3 – The Four Words & Loop” (68 words) into “Slide 2 – The Shift Provocation”: too thin to stand as a chapter. Check the title still names the argument.",
+    "Merged “Slide 5 – Demo 1: One Vague Thought, Five Representations” (120 words) with the following section after “Slide 4 – IMAGINATION Header & Principle”: too thin to stand as a chapter. Check the title still names the argument.",
+    "Merged “Slide 7 – Demo 2: Generation vs Selection” (112 words) with the following section after “Slide 6 – TASTE Header & Principle”: too thin to stand as a chapter. Check the title still names the argument.",
+    "Merged “Slide 9 – Demo 3: Destroy Something Good” (117 words) with the following section after “Slide 8 – PERSEVERANCE Header & Principle”: too thin to stand as a chapter. Check the title still names the argument.",
+    "Merged “Slide 11 – Demo 4: The Confident Paragraph” (119 words) with the following section after “Slide 10 – JUDGMENT Header & Principle”: too thin to stand as a chapter. Check the title still names the argument.",
+    "Merged “Slide 13 – The Loop, Not a Pipeline” (77 words) with the following section after “Slide 12 – Layer Cake: All Four Principles Together”: too thin to stand as a chapter. Check the title still names the argument.",
+    "Author note: each principle slide was paired with the demo that proves it, so every chapter follows the deck's own idea → example → principle rhythm.",
+    "Author note: speaker timings, the aesthetic quickguide, and the Q&A prompt were written for a room, not a reader. They carry no argument and are not carried over.",
+    "Author note: the deck's four accent colours are presentation design; the essay uses the reader's own semantic palette instead."
+  ],
+  "chapters": [
+    {
+      "id": "opening-notes",
+      "title": "Production got cheap",
+      "purpose": "Open on the cost collapse rather than the framework, so the reader feels the problem before it is named.",
+      "thesis": "When the cost of making falls far enough, the constraint moves from production to discernment.",
+      "sourceChunkIds": ["c01", "c03"],
+      "sourceSections": ["Opening notes", "Slide 1 – Title & Thesis Statement"],
+      "estimatedWords": 360
+    },
+    {
+      "id": "slide-2-the-shift-provocation",
+      "title": "Four words for what is left",
+      "purpose": "Name the four disciplines that the bottleneck now sits behind, and show them as one loop rather than a list.",
+      "thesis": "What remains scarce is imagining what could exist, selecting what belongs, refining it far enough, and judging whether it can be trusted.",
+      "sourceChunkIds": ["c04", "c05"],
+      "sourceSections": ["Slide 2 – The Shift Provocation", "Slide 3 – The Four Words & Loop"],
+      "estimatedWords": 380
+    },
+    {
+      "id": "slide-4-imagination-header-principle",
+      "title": "What could this become",
+      "purpose": "Show imagination as a method — moving one vague thought through enough forms to discover the real question.",
+      "thesis": "Imagination is not a mood; it is the discipline of moving an idea through representations until the question it answers becomes visible.",
+      "sourceChunkIds": ["c06", "c07"],
+      "sourceSections": ["Slide 4 – IMAGINATION Header & Principle", "Slide 5 – Demo 1: One Vague Thought, Five Representations"],
+      "estimatedWords": 420
+    },
+    {
+      "id": "slide-6-taste-header-principle",
+      "title": "What belongs",
+      "purpose": "Turn taste from an unexplainable preference into the work of studying first and rejecting well.",
+      "thesis": "AI produces optionality; taste is the discipline that converts optionality into direction.",
+      "sourceChunkIds": ["c08", "c09"],
+      "sourceSections": ["Slide 6 – TASTE Header & Principle", "Slide 7 – Demo 2: Generation vs Selection"],
+      "estimatedWords": 400
+    },
+    {
+      "id": "slide-8-perseverance-header-principle",
+      "title": "How far is far enough",
+      "purpose": "Separate commitment to the problem from attachment to the current artifact, which cheap production makes harder, not easier.",
+      "thesis": "Perseverance is commitment to the problem and willingness to destroy a solution that looks good.",
+      "sourceChunkIds": ["c10", "c11"],
+      "sourceSections": ["Slide 8 – PERSEVERANCE Header & Principle", "Slide 9 – Demo 3: Destroy Something Good"],
+      "estimatedWords": 420
+    },
+    {
+      "id": "slide-10-judgment-header-principle",
+      "title": "Are we justified in trusting it",
+      "purpose": "Give the reader an epistemic vocabulary, then show how a fluent paragraph flattens four levels of certainty into one voice.",
+      "thesis": "Judgment is naming which claims are validated, which are inferred, and which are merely declared — and scaling verification with the cost of being wrong.",
+      "sourceChunkIds": ["c12", "c13"],
+      "sourceSections": ["Slide 10 – JUDGMENT Header & Principle", "Slide 11 – Demo 4: The Confident Paragraph"],
+      "estimatedWords": 430
+    },
+    {
+      "id": "slide-12-layer-cake-all",
+      "title": "The four at once",
+      "purpose": "Stack the disciplines so the reader sees them compounding, then show that the order is not a pipeline.",
+      "thesis": "The four disciplines build on one another and loop back: judgment can send you back to imagination.",
+      "sourceChunkIds": ["c14", "c15"],
+      "sourceSections": ["Slide 12 – Layer Cake: All Four Principles Together", "Slide 13 – The Loop, Not a Pipeline"],
+      "estimatedWords": 380
+    },
+    {
+      "id": "slide-14-closing-thesis",
+      "title": "Where the work moved",
+      "purpose": "Return to the opening provocation and relocate human creativity rather than defend it.",
+      "thesis": "Cheap production does not diminish human creativity; it moves it from making the first artifact to deciding what is worth making at all.",
+      "sourceChunkIds": ["c16"],
+      "sourceSections": ["Slide 14 – Closing Thesis"],
+      "estimatedWords": 330
+    }
+  ]
+}

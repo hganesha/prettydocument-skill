@@ -1,0 +1,230 @@
+{
+  "sourceId": "src-deck-blueprint-the-discernment-framework",
+  "title": "DECK BLUEPRINT: “The Discernment Framework”",
+  "sourcePath": "/home/user/fieldnotes/drafts/discernment-frame/source.md",
+  "contentHash": "sha256:b704bd64eb771b39f7f305ad250aff7eaaa276e8eacabea333bf9584a5160b09",
+  "chunkCount": 20,
+  "wordCount": 1964,
+  "chunks": [
+    {
+      "id": "c01",
+      "ordinal": 1,
+      "sectionIndex": 0,
+      "heading": "Opening notes",
+      "text": "**40-Minute Talk + Demos | 27 min Speaking + 13 min Demos**\n**Core Arc:** AI makes creation cheap → bottleneck shifts to human discernment → framework: IMAGINATION → TASTE → PERSEVERANCE → JUDGMENT → loop\n**Design Language:** High-contrast typography (serif headers, sans-body), off-white/black palette with four accent colors (IMAGINATION teal, TASTE gold, PERSEVERANCE burgundy, JUDGMENT steel blue). Generous white space, card-based layout, minimal bullets, key phrases set in large scale, and one curated visual per slide (generated, sketch, or data viz). Each slide follows: **idea → example → principle** rhythm.\n\n---",
+      "words": 91,
+      "location": {
+        "heading": "Opening notes"
+      }
+    },
+    {
+      "id": "c02",
+      "ordinal": 2,
+      "sectionIndex": 1,
+      "heading": "🎬 SLIDE-BY-SLIDE BLUEPRINT",
+      "text": "*Timing notes: Blocks total the stated minutes. “Speak” = presenter time. “Demo” = live AI interaction. Transitions are <45 sec.*",
+      "words": 20,
+      "location": {
+        "heading": "🎬 SLIDE-BY-SLIDE BLUEPRINT"
+      }
+    },
+    {
+      "id": "c03",
+      "ordinal": 3,
+      "sectionIndex": 2,
+      "heading": "Slide 1 – Title & Thesis Statement",
+      "text": "- **Time:** 0:00–0:10 (Speak 1 min)\n- **Content:**\n  - Large headline: *“AI makes creation cheap. That changes the bottleneck.”*\n  - Subhead: *“The new bottleneck is human discernment.”*\n  - Footer: Your name / event / “40 min + demos”\n- **Visual:** Minimalist: large type on solid accent color background (e.g., teal). One subtle, low-opacity graphic of a production pipeline breaking.\n- **Speaker Note:** “Start with a provocative contrast. For most of human history, making was expensive. AI changes that. It makes production cheap. But when production becomes cheap, something else becomes scarce.”",
+      "words": 91,
+      "location": {
+        "heading": "Slide 1 – Title & Thesis Statement"
+      }
+    },
+    {
+      "id": "c04",
+      "ordinal": 4,
+      "sectionIndex": 3,
+      "heading": "Slide 2 – The Shift Provocation",
+      "text": "- **Time:** 0:10–0:45 (Speak 3.5 min)\n- **Content:**\n  - Bullet-free: four statements in large type.\n  - “Writing took time. Designing took time. Coding took time. Research took time.”\n  - “AI changes that. It makes production cheap.”\n  - “But when production becomes cheap, something else becomes scarce.”\n- **Visual:** Four stacked statements, each in a separate quadrant of the slide, aligned to a central vanishing point. Accent color accentuates the last line.\n- **Speaker Note:** Pause after each line. Let the silence land. “The point is not ‘look how good AI is.’ The point is: this took seconds. So if everyone can produce, what becomes valuable?”",
+      "words": 105,
+      "location": {
+        "heading": "Slide 2 – The Shift Provocation"
+      }
+    },
+    {
+      "id": "c05",
+      "ordinal": 5,
+      "sectionIndex": 4,
+      "heading": "Slide 3 – The Four Words & Loop",
+      "text": "- **Time:** 0:45–1:00 (Speak 1 min)\n- **Content:**\n  - **IMAGINATION. TASTE. PERSEVERANCE. JUDGMENT.**\n  - Loop graphic: *Imagine → Select → Refine → Commit → (curved arrow back to Imagine)*\n- **Visual:** Bold, large-type center. Loop as a continuous, thin line in the accent color, wrapping the four words. Clean, uncluttered.\n- **Speaker Note:** “These become the spine of the entire talk. Imagine → Select → Refine → Commit.”",
+      "words": 68,
+      "location": {
+        "heading": "Slide 3 – The Four Words & Loop"
+      }
+    },
+    {
+      "id": "c06",
+      "ordinal": 6,
+      "sectionIndex": 5,
+      "heading": "Slide 4 – IMAGINATION Header & Principle",
+      "text": "- **Time:** 1:00–1:10 (Speak 1 min)\n- **Content:**\n  - Header: **IMAGINATION** – *What could this become?*\n  - Two principles in smaller type:\n    - **Progressive concretization:** intuition → concept → vocabulary → framework → form → artifact\n    - **Representation hopping:** describe → sketch → model → simulate → critique → prototype → compress\n- **Visual:** Header in IMAGINATION accent (teal). Two-column layout, each principle as a flowing arrow sequence. Minimal text, maximum breathability.",
+      "words": 72,
+      "location": {
+        "heading": "Slide 4 – IMAGINATION Header & Principle"
+      }
+    },
+    {
+      "id": "c07",
+      "ordinal": 7,
+      "sectionIndex": 6,
+      "heading": "Slide 5 – Demo 1: One Vague Thought, Five Representations",
+      "text": "- **Time:** 1:10–1:50 (Speak 2 min + Demo 4 min)\n- **Content:**\n  - **Prompt live:** “I have this idea that modern life gives us more connection but less intimacy.”\n  - **AI transformations (one after another, ~45 sec each):**\n    1. Thesis statement\n    2. Visual metaphor\n    3. Short-film concept\n    4. Critique of concept\n    5. Compressed one-sentence takeaway\n- **Visual:** Split screen or sequential panels. Left: your prompt. Right: AI output at each step, labeled. Use a consistent font for AI output, handwritten-style for your prompt.\n- **Takeaway Line (spoken at demo end):** “The goal is not to prompt until AI gives you the answer. The goal is to move the idea through enough forms that you discover what the question really is.”",
+      "words": 120,
+      "location": {
+        "heading": "Slide 5 – Demo 1: One Vague Thought, Five Representations"
+      }
+    },
+    {
+      "id": "c08",
+      "ordinal": 8,
+      "sectionIndex": 7,
+      "heading": "Slide 6 – TASTE Header & Principle",
+      "text": "- **Time:** 1:50–2:05 (Speak 1 min)\n- **Content:**\n  - Header: **TASTE** – *What belongs?*\n  - Universalized principles:\n    - **Study before you make.**\n    - **Add only what belongs.**\n- **Visual:** Header in TASTE accent (gold). Two principles as centered, spacious text blocks. Gold accent dot between them.",
+      "words": 46,
+      "location": {
+        "heading": "Slide 6 – TASTE Header & Principle"
+      }
+    },
+    {
+      "id": "c09",
+      "ordinal": 9,
+      "sectionIndex": 8,
+      "heading": "Slide 7 – Demo 2: Generation vs Selection",
+      "text": "- **Time:** 2:05–2:45 (Speak 2 min + Demo 4 min)\n- **Content:**\n  - Ask AI for **10 possible concepts** for a simple brief (e.g., a campaign name, product name, opening paragraph).\n  - **Your role:** You choose. Explain *why* you reject 8 or 9.\n  - Live: Select one. Articulate rejections: “This one is clever but generic.” “This one is surprising, but it violates the tone.” “This one is less flashy, but it contains the central idea.”\n- **Visual:** Column chart or list of 10 AI-generated options, with your chosen one highlighted. Strikethroughs or notes on rejected ones. Elegant, minimal list design.\n- **Takeaway (spoken):** “AI gives you optionality. Taste converts optionality into direction.”",
+      "words": 112,
+      "location": {
+        "heading": "Slide 7 – Demo 2: Generation vs Selection"
+      }
+    },
+    {
+      "id": "c10",
+      "ordinal": 10,
+      "sectionIndex": 9,
+      "heading": "Slide 8 – PERSEVERANCE Header & Principle",
+      "text": "- **Time:** 2:45–3:00 (Speak 1 min)\n- **Content:**\n  - Header: **PERSEVERANCE** – *Have we pushed it far enough?*\n  - Key phrase: **Artifacts are disposable; structure is durable.**\n  - Process: `generate → inspect → test → learn → discard → regenerate`\n  - What survives: intent, structure, constraints, principles, standards, learning.\n- **Visual:** Header in PERSEVERANCE accent (burgundy). The process steps as a dotted horizontal sequence. “Survives” listed in a smaller inset with a checkmark icon.",
+      "words": 74,
+      "location": {
+        "heading": "Slide 8 – PERSEVERANCE Header & Principle"
+      }
+    },
+    {
+      "id": "c11",
+      "ordinal": 11,
+      "sectionIndex": 10,
+      "heading": "Slide 9 – Demo 3: Destroy Something Good",
+      "text": "- **Time:** 3:00–3:45 (Speak 2 min + Demo 4 min)\n- **Content:**\n  - Take an AI-generated piece that looks **genuinely good** (show a snippet: paragraph, visual, prototype).\n  - **Say:** “This is good. But it’s wrong.”\n  - **Live breakdown:** Why? Structure wrong? Audience mismatch? Emotional tone off? Hidden assumption broken?\n  - **Keep only:** central insight, one line, structure, constraint. **Discard the rest.** Regenerate with those guardrails.\n- **Visual:** Before/after split. Left: the “good” AI output. Right: the distilled, regenerated artifact, with surviving elements annotated in the accent color.\n- **Takeaway (spoken):** “The ability to produce cheaply should make us less attached to what we produce.” / “Perseverance is commitment to the problem, not attachment to the current solution.”",
+      "words": 117,
+      "location": {
+        "heading": "Slide 9 – Demo 3: Destroy Something Good"
+      }
+    },
+    {
+      "id": "c12",
+      "ordinal": 12,
+      "sectionIndex": 11,
+      "heading": "Slide 10 – JUDGMENT Header & Principle",
+      "text": "- **Time:** 3:45–4:00 (Speak 1 min)\n- **Content:**\n  - Header: **JUDGMENT** – *Are we justified in trusting it?*\n  - Epistemic vocabulary:\n    - **Validated:** we checked it.\n    - **Inferred:** evidence points toward it.\n    - **Declared:** it is an assumption, preference, intention, or creative decision.\n- **Visual:** Header in JUDGMENT accent (steel blue). Three columns, each with the term, definition, and a small icon. Clean grid layout.",
+      "words": 65,
+      "location": {
+        "heading": "Slide 10 – JUDGMENT Header & Principle"
+      }
+    },
+    {
+      "id": "c13",
+      "ordinal": 13,
+      "sectionIndex": 12,
+      "heading": "Slide 11 – Demo 4: The Confident Paragraph",
+      "text": "- **Time:** 4:00–4:45 (Speak 2 min + Demo 4 min)\n- **Content:**\n  - **Give AI source material/simple dataset** → ask it to explain what happened.\n  - **AI output (live):** “Customers left because the new experience was too complicated.”\n  - **Break it apart:**\n    - “Customer churn increased” → **Validated**\n    - “It increased after the redesign” → **Validated**\n    - “The redesign caused the churn” → **Inferred**\n    - “Customers found it complicated” → perhaps **Declared**, unless research exists\n- **Visual:** The confident paragraph in large type, then annotated layers underneath showing which parts are validated/inferred/declared, color-coded (green/orange/gray).\n- **Takeaway (spoken):** “The prose flattened four levels of certainty into one voice.” / “The verification burden should scale with the cost of being wrong.”",
+      "words": 119,
+      "location": {
+        "heading": "Slide 11 – Demo 4: The Confident Paragraph"
+      }
+    },
+    {
+      "id": "c14",
+      "ordinal": 14,
+      "sectionIndex": 13,
+      "heading": "Slide 12 – Layer Cake: All Four Principles Together",
+      "text": "- **Time:** 4:45–5:20 (Speak 3 min)\n- **Content:**\n  - Show the **infographic** for the first time in full.\n  - Four layers stacked like a cake, labeled:\n    - **IMAGINATION** – Explore (What could this become?)\n    - **TASTE** – Select (What belongs?)\n    - **PERSEVERANCE** – Refine (Have we pushed it far enough?)\n    - **JUDGMENT** – Commit (Are we justified in trusting it?)\n  - Bottom loop: **Imagine → Select → Refine → Commit → Imagine again**\n- **Visual:** Vertical layer cake diagram. Each layer colored by its accent. The loop as a subtle curved arrow at the base. Elegant, dessert-like but authoritative.\n- **Speaker Note:** “These are not steps you perform exactly once. You constantly move backward. Judgment may reveal you need more imagination. Taste may tell you the original framing was wrong. Perseverance may reveal a better possibility. The framework is a loop, not a pipeline.”",
+      "words": 144,
+      "location": {
+        "heading": "Slide 12 – Layer Cake: All Four Principles Together"
+      }
+    },
+    {
+      "id": "c15",
+      "ordinal": 15,
+      "sectionIndex": 14,
+      "heading": "Slide 13 – The Loop, Not a Pipeline",
+      "text": "- **Time:** 5:20–5:35 (Speak 1 min 15 sec)\n- **Content:**\n  - Emphasize the circular nature.\n  - Quote: *“These are not steps you perform exactly once. You constantly move backward.”*\n- **Visual:** Same layer cake, but the loop arrow is highlighted in motion (described in animation, or shown as a dynamic element if digital). Otherwise, bold arrow wrapping all four sections.\n- **Speaker Note:** Connect the loop to the earlier “Imagine → Select → Refine → Commit” slide.",
+      "words": 77,
+      "location": {
+        "heading": "Slide 13 – The Loop, Not a Pipeline"
+      }
+    },
+    {
+      "id": "c16",
+      "ordinal": 16,
+      "sectionIndex": 15,
+      "heading": "Slide 14 – Closing Thesis",
+      "text": "- **Time:** 5:35–5:55 (Speak 2 min)\n- **Content:**\n  - **Headline:** *“AI is making our ability to produce almost unlimited.”*\n  - **Body text (2 lines):**\n    - “That does not make human creativity less important. It changes where human creativity lives.”\n    - “Less in the act of producing the first artifact. More in imagining what could exist. Recognizing what deserves to exist. Staying with it until it becomes good. And knowing when it is trustworthy enough to enter the world.”\n  - **Footer:** *“AI accelerates the loop. Human discernment directs it.”*\n- **Visual:** Full-bleed large type. Minimal. Centered on off-white/black. The four accent colors as thin underlines beneath each key phrase (imagination=teal, taste=gold, etc.).\n- **Speaker Note:** End on the thesis. Do not summarize ten things. Let the words land.",
+      "words": 127,
+      "location": {
+        "heading": "Slide 14 – Closing Thesis"
+      }
+    },
+    {
+      "id": "c17",
+      "ordinal": 17,
+      "sectionIndex": 16,
+      "heading": "Slide 15 – Thank You / Q&A Prompt",
+      "text": "- **Time:** 5:55–6:00 (Speak 30 sec)\n- **Content:**\n  - “Questions?”\n  - Contact / social / next talk teaser.\n- **Visual:** Your logo / event brand, centered. Plenty of negative space.\n\n---",
+      "words": 31,
+      "location": {
+        "heading": "Slide 15 – Thank You / Q&A Prompt"
+      }
+    },
+    {
+      "id": "c18",
+      "ordinal": 18,
+      "sectionIndex": 17,
+      "heading": "⏱ TIMING SUMMARY",
+      "text": "| Segment | Duration | Type |\n|---------|----------|------|\n| 0–5 min Open & Shift | 5:00 | Speak |\n| 5–12 min Imagination + Demo 1 | 7:00 | Speak 3 + Demo 4 |\n| 12–19 min Taste + Demo 2 | 7:00 | Speak 3 + Demo 3.5 |\n| 19–27 min Perseverance + Demo 3 | 8:00 | Speak 4 + Demo 4 |\n| 27–35 min Judgment + Demo 4 | 8:00 | Speak 4 + Demo 4 |\n| 35–39 min Layer Cake Integration | 4:00 | Speak |\n| 39–40 min Closing Thesis | 1:00 | Speak |\n| **Total** | **40:00** | **Speak ~27 min + Demo ~13 min** |",
+      "words": 117,
+      "location": {
+        "heading": "⏱ TIMING SUMMARY"
+      }
+    },
+    {
+      "id": "c19",
+      "ordinal": 19,
+      "sectionIndex": 18,
+      "heading": "🎨 AESTHETIC QUICKGUIDE FOR DESIGNERS",
+      "text": "- **Palette:**\n  - Background: True black or deep navy (contrast for readability).\n  - Text: Off-white / warm gray.\n  - Accent 1 (IMAGINATION): Teal `#00B4D8`\n  - Accent 2 (TASTE): Gold `#FFB800`\n  - Accent 3 (PERSEVERANCE): Burgundy `#8E2424`\n  - Accent 4 (JUDGMENT): Steel Blue `#4A90E2`\n- **Typography:**\n  - Headers: Serif (e.g., Playfair Display, DM Serif Display) at 48–72pt.\n  - Body: Sans-serif (e.g., Inter, Roboto) at 24–32pt.\n  - Key quotes: Serif, large (60–80pt), colored in accent.\n- **Layout Rules:**\n  - Max 3–4 ideas per slide.\n  - One visual per slide (no clip-art).\n  - Generous padding (at least 1\" margins).\n  - Accent colors used sparingly: only for headers, key terms, loop accents.\n- **Imagery:**\n  - AI-generated outputs shown at low opacity, framed by human selection.\n  - Before/after demos split vertically or in concentric circles.\n  - Loop diagrams as thin, single-color lines, not heavy shapes.",
+      "words": 140,
+      "location": {
+        "heading": "🎨 AESTHETIC QUICKGUIDE FOR DESIGNERS"
+      }
+    },
+    {
+      "id": "c20",
+      "ordinal": 20,
+      "sectionIndex": 19,
+      "heading": "🗣 SPEAKER RHYTHM REMINDER",
+      "text": "Alternate **idea → example → demo → principle** per segment, not **theory → theory → theory → giant demo**. The audience experiences the thesis through the demos, not just hears it.\n\n---\n**This blueprint retains every documented principle, demo description, takeaway line, and timing structure while formatting it for a powerful, aesthetically coherent deck. Swap the accent colors, font choices, or visual metaphors to match your personal brand; the arc and spoken content remain unchanged.**",
+      "words": 75,
+      "location": {
+        "heading": "🗣 SPEAKER RHYTHM REMINDER"
+      }
+    }
+  ]
+}
